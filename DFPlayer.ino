@@ -11,6 +11,7 @@ void setup()
 {
   Serial.begin(9600);//לא נחוץ
   SOS.begin(9600);
+  Player.begin(SOS);
   if(Player.begin(SOS))//הצליח להתחיל את הנגן
   {
     Serial.println("it is fine");
